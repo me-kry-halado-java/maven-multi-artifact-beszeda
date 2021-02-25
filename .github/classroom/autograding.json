@@ -1,0 +1,24 @@
+{
+  "tests": [
+    {
+      "name": "build",
+      "setup": "",
+      "run": "mvn install",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "osszeadas",
+      "setup": "",
+      "run": "mvn exec:java -pl calculator-console -Dexec.mainClass=\"hu.meiit.haladojava.calculator.console.App\"",
+      "input": "3 + 4",
+      "output": "7.0",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    }
+  ]
+}
